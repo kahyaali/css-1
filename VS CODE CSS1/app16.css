@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+/*galery --item özelliğine border ekleyince 1200px geçtiği için 4. resim aşağı satıra geçti bu yüzden 
+ box-sizing:border-box diyerek border ve padding değerlerini alma dedik fakat margin değerleri dikkate alınır*/
+
+
+#galery {
+    width: 1200px;
+    margin: 10px auto;
+}
+
+.item-container {
+    width: 25%;
+    /*div genişliği 1200px dendik 25% deyice 4 resim için 300px alan kaplar*/
+    float: left;
+    padding: 10px;
+}
+
+#galery-item {
+    border: 1px solid #ccc;
+}
+
+#galery-item:hover {
+    border: 1px solid #777;
+    cursor: pointer;
+    /*elementin üzerine geline el işareti olarak değişir*/
+}
+
+#galery-item img {
+    width: 100%;
+    height: 200px;  /*farklı boyutlu resimlerde boyut farkı oluşmasın diye hepsinin yüksekliğini 200px de sabitledik*/
+    object-fit: cover;  /*büyük boyutlu resimler belli bir px sığmaz ise resmi kırparak gösteriyor*/
+}
+
+.description {
+    text-align: center;
+    padding: 15px;
+}

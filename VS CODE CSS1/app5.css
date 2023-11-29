@@ -1,0 +1,55 @@
+
+.write{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    background: red;
+}
+
+
+#first{
+    display: none; /* display:none özellği elementi görünmez hale getirir*/
+}
+
+
+#deneme1{
+    background-color: blue;
+    display: inline;
+    border: 2px solid grey;
+}
+
+#deneme2{
+ background: green;
+ display: inline;
+ border: 2px solid grey;
+}
+
+#deneme3{
+background: yellow;
+display: inline;
+border: 2px solid grey;
+}
+
+#deneme4{
+    background-color: blue;
+    display: inline-block;
+    border: 2px solid grey;
+    width: 100px;
+    height: 100px;
+}
+
+#deneme5{
+ background: green;
+ display: inline-block;
+ border: 2px solid grey;
+ width: 100px;
+ height: 100px;
+}
+
+#deneme6{
+background: yellow;
+display: inline-block;
+border: 2px solid grey;
+width: 100px;
+height: 100px;
+}

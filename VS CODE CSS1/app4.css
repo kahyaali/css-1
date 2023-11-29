@@ -1,0 +1,52 @@
+img{
+    width: 200px;
+    float: left; /* Resim solda kalır text resmin üst sağ tarafından başlar*/
+    /*float:right; /* Resim yazının sağında kalır*/
+    margin-right: 10px; /* yazıyla resim arasında 10px boşluk oluşturur*/
+}
+p{
+    border: 2px solid red;
+    padding: 5px;
+}
+
+.clear{
+    overflow: auto;  
+}
+
+/* Burada class clear olan resmi çerçeveleyen p etiketi resmi kavramadığı zaman border resmin yarısını kapsayabilir 
+bu yüzden overflow auto dedik içeriğindeki ifadelere göre genişle dedik yani yazı azalıp border küçüldükçe resim dışarıda kalmasın diye */
+
+.box{
+    width: 500px;
+    height: 200px;
+    margin: 2px;
+}
+
+#first{
+    background-color: red;
+    float: left;
+}
+#second{
+    background-color: green;
+    float: left;
+}
+#third{
+    background-color: yellow;
+    float: left;
+}
+
+#conteiner{
+    background-color: grey;
+}
+
+
+.sys{
+    overflow: auto; /* Conteiner div float yapınca diğer üç divi bu conteiner div görünmez oldu görünür yapmak için overflow 1. yöntemdi*/
+}
+
+.sys:after{
+    content: "";
+    display: block;
+    clear: both;          /* Conteiner div float yapınca diğer üç divi bu conteiner div görünmez oldu görünür yapmak için overflow 2. yöntemdi*/
+}
+

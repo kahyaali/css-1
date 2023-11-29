@@ -1,0 +1,29 @@
+.ustlist{
+    background-color: red;
+    padding: 10px;  /*li ifadelerinin ul ile arasında padding oluşturdu*/ 
+    border: 1px solid grey;
+}
+ul li{
+    background-color: blue;
+    padding: 10px;  /*li tanımları içinde padding oluşturdu*/
+    margin-top: 5px; /* li ifadeleri için yukarıdan 5pc boşluk oluşturdu*/
+}
+ol{
+    background-color: yellow;
+    list-style-type: none; /* list-style-type:none demek list başındaki ifadeleri kaldırmak demek*/
+    padding: 10px 20px;
+    border-left: 5px solid red;
+}
+
+.list{
+    list-style-type: none;
+    border: 1px solid red;
+    padding: 0px;
+}
+.altlist{
+    border-bottom: 3px solid yellow;
+    padding: 7px 12px;
+}
+.altlist:last-child{
+  border-bottom: none;  /*son li deki border-bottom değerini none yaptık çünkü ul nin kendi border ifadesi ile üst üste geliyor diye son liye alt border iptal ediyoruz*/
+}

@@ -1,0 +1,49 @@
+
+#nav{
+    background-color: #333;
+}
+
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.tags ul li{
+    margin-bottom: 10px;
+}
+
+.tags ul{
+    list-style-type: none;
+}
+
+.mt20{
+    margin-top: 20px;
+}
+
+#nav ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#nav li{
+    float: left;
+}
+
+#nav li a{
+    display:inline-block ;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s linear;
+}
+
+#nav li a:hover{
+    background-color: #111;
+}
+.active{
+    background: #DD4453;
+}
+
+li{
+    list-style: none;
+}

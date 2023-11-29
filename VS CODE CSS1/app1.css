@@ -1,0 +1,51 @@
+
+
+    ul.a{
+        list-style-type: none;
+    }
+    ul.b{
+        list-style-type: square;
+    }
+    ul.c{
+        list-style-type: upper-roman;
+    }
+    ul.d
+    {
+        list-style-type: lower-alpha ;
+    }
+    ul.e{
+        list-style-type: none;
+    }
+
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table td,table th{
+        border:1px solid #ddd;
+        padding: 6px; /* td ve th ierisindeki text ifadlerinin tablo içerisinde 4 kenardan 6px boşluk oluşmasını sağlar*/
+    }
+
+    table th{
+        text-align: left;
+        background-color: blue;
+        color:white;  /*sütunlardaki yazı rengini beyaz yaptı*/
+    }
+
+    table tr:nth-child(odd){
+        background-color: grey;  /*tek numaralrı satırlara gri rengini verdik*/
+    }
+
+    table tr:nth-child(even)
+    {
+        background-color: green;  /*çift numaralı satırlara yeşil rengini verdik*/
+    }
+
+    table tr:hover{
+        background-color: yellow;
+        color:red;
+    }
+
+    .table-gray th{
+   background-color: darkkhaki;  /* class ifadesine göre stil yaptık*/
+    }

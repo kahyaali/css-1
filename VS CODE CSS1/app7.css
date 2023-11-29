@@ -1,0 +1,114 @@
+.box{
+    width: 200px;
+    height: 200px;
+}
+
+#first{
+    background: red;
+    margin: auto;  /*elementi sayfanın ortasına yerleştirir sayfa büyütülüp küçüldükçe otomatik olarak kendini sayfanın ortasında kalacak şekilde margin değerlerini ayarlar*/
+}
+
+#second{
+    background: green;
+    margin: 10px 5px 10px 5px; /*top right bottom left şeklinde boşluklar oluşturur*/
+}
+
+#third{
+    background: yellow;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+span{
+    background: red;
+    margin: 20px;  /*inline olduğu için sağdan soldan margin uyguladı üstten ve alttan margin uygulanmaz*/
+}
+.text1{
+    padding: 10px;
+}
+
+#deneme3{
+    background: green;
+    padding: 10px;  /*kutunun içerisindeki element ile kutu çerçevesi arasındaki iç boşlukları oluşturmak için padding kullanılır*/
+    margin-top: 10px;
+}
+
+#deneme4{
+    background: red;
+    
+}
+
+#deneme5{
+    background:yellow;
+
+}
+
+
+#deneme6{
+    background: green;
+    margin-top: 20px;
+    display:inline-block;
+    border: 2px solid red;
+    
+}
+
+#deneme7{
+    background: red;
+    display:inline-block;
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+}
+
+#deneme8{
+    background:yellow;
+    display: inline-block;
+    border-top-width:2px;
+    border-right-width: 3px;
+    border-bottom-width: 4px;
+    border-left-width: 5px;
+    border-top-style: solid;
+    border-right-style: dashed;
+    border-bottom-style: groove;
+    border-left-style:double ;
+    border-top-color: red;
+    border-right-color: blue;
+    border-bottom-color: yellow;
+    border-left-color: green;
+}
+
+#deneme9{
+    background: grey;
+    display: inline-block;
+    border-radius: 5px;  /*kutunun köşelerinde 5px yuvarlama yapar*/
+}
+
+#deneme10{
+    background: grey;
+    display: inline-block;
+    border-radius: 50%;  /*elementi çember haline getirir*/
+    text-align:center;
+
+}
+
+#deneme11{
+    background: red;
+    box-sizing: border-box;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    border: 10px soid black;
+
+}
+
+#deneme12{
+    background: blue;
+    box-sizing: content-box;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    border: 10px soid black;
+  
+
+}

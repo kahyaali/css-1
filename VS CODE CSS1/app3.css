@@ -1,0 +1,22 @@
+
+#conteiner{
+    width: 1140px;
+    background-color: green;
+}
+
+#blog-post-conteiner{
+    background-color: gray;
+}
+
+.blog-post{
+    width: 75%;
+    background-color: red;
+}
+#others-post{
+    width: 25%;
+    background-color: yellow;
+}
+
+.author-box{
+    border: 2px solid red;
+}

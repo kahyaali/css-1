@@ -1,0 +1,68 @@
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+}
+
+li{
+    display: inline-block;
+    float: left;
+    margin-right: 1px;
+}
+
+li a{
+    background-color: black;
+    color: white;
+    display: block;
+    min-width: 140px;
+    text-decoration: none; /*yazıların altındaki çizgiyi kaldırdık*/
+    height: 50px;
+    line-height: 50px;  /*satır yüksekliği vermez isek yazı kutunun yukarısında kalırdı satır yüksekliği vererek ortasına getirdik*/
+    text-align: center;
+    font-family: "HelveticaNeue",Helvetica,Arial, sans-serif;
+}
+
+li a:hover{
+background: #19C589;
+}
+
+li:hover ul a{
+    background: #f3f3f3;
+    color: black;
+    height: 40px;
+    line-height: 40px;
+}
+
+li:hover ul a:hover{
+    background-color: #19C589;
+    color: #fff;
+}
+
+li ul li{
+    display: block;
+    float: none;
+}
+
+li ul li a{
+    text-align: left;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+li a:hover{
+background-color: #19C589;
+}
+
+li ul{
+display: none;  /*Kurslar altına dropdown olarak gözüken menüleri sakladık display:none diyerek bunu yazmasaydık aşağı doğru menü açık gözükecekti*/
+}
+
+
+/*ul li a birden fazla uyan ifade var + .hidden diyerek .hidden den öncekini al diyorum oda kurslar olana denk geliyor 
+bu şekilde kurslar üzerine gelince sayfa açılır üzerinden ayrılınca kapanır içindeki menülere erişemem bunun için .hidden:hover diyorum kurslar altındaki classı hidden olana hover 
+olduğunda diyorum böylece menü kapanmıyor ve seçenekler içinde geziyorum*/
+ul li a:hover +.hidden,.hidden:hover{
+display: block;
+}

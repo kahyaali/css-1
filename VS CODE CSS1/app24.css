@@ -1,0 +1,54 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    display: flex; /*display:flex deyince yan yana aldı inline-block gibi davrandı*/
+    justify-content: flex-end;  /*sağa doğru yaslıyoruz elemanları*/ 
+    flex-wrap: wrap;  /*sayfa küçüldüğü zaman elemanlar yan yana durmasın alt alta gelsin istedğimiz için flex-wrap özelliğini ekledik*/
+list-style: none;
+background-color: goldenrod;
+}
+
+
+.navigation a{
+text-decoration: none; /*yazıların altındaki çizgileri kaldırıyor*/
+display: block;  /*padding değeri verebilmek için block yaptık*/
+padding: 16px;
+color: #fff;
+}
+
+.navigation a:hover{
+    background-color: rgb(233,184,61);
+}
+
+@media all and (max-width:800px){
+    .navigation{
+        justify-content: space-around;
+    }
+}
+
+
+/*600px altına düşünce menü tanımları yan yana değil alt alta gelecek*/
+@media all and (max-width:600px){
+    .navigation{
+        flex-direction: column;
+    }
+
+    .navigation a{
+        text-align: center;
+        padding: 10px;
+        border-top :1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+  
+    /*en son list elemanındaki border-bottom none yaptık*/
+    .navigation li:last-child a{
+        border-bottom: none;
+    }
+
+    
+}

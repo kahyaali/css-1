@@ -1,0 +1,29 @@
+
+.card{
+    width: 200px;
+    height: 200px;
+    background: red;
+    border-radius: 2px;
+    margin: 20px;
+    display: inline-block;
+}
+
+body{
+    background: grey;
+}
+
+.card-1{
+    box-shadow: 10px 20px;
+}
+
+.card-2{
+    box-shadow: 10px 10px 20px;
+}
+
+.card-3{
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,.4);
+}
+
+.card-4{
+    box-shadow: 10px 10px 10px 10px blue;
+}

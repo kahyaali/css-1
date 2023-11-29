@@ -1,0 +1,206 @@
+
+
+/* * koyunca tüm elemanlara bu değerleri uygular*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*container bazlı hizalama işlemlerini yaptık*/
+.container1{
+    display: flex; /*flex dediğimizde kutular yan yana geldi block olma özelliğini kaybetti inline-block gibi davranmaya başladı*/
+    //flex-direction: row-reverse; /*sayfanın sağından hizalamaya başladı ve kutuları ters çevirdi*/ 
+    //flex-direction: column;  /*elementler alt alta geldi ve tüm satırı kapladı*/
+    //flex-direction:column-reverse; /*elementleri ters çevirip dikey olarak sıralar tüm satırı kaplar*/
+    //flex-warp:nowrap; /*elementler sayısı arttıkça sayfaya sığmaz*/
+    //flex-wrap:wrap; /*elementlerin sayısı arttıkça sayfaya sığmaz wrap özelliği ile bir alt satırdan başlatır taşma olanları*/
+    flex-wrap:wrap-reverse;/*alt satır dolu oluyor taşan elemanları üst satırdan başlatır*/
+background-color:red;
+padding: 15px;
+}
+
+.item1{
+    background-color: chocolate;
+    padding: 40px;
+    margin: 30px;
+    color: #fff;
+    font-size: 35px;
+}
+
+.container2{
+    display: flex;
+    //justify-content: center;     /*elemanları yatayda hizalar center dediğimiz için ortada hizalar*/
+   //justify-content: flex-start;  /*elemanları sola yaslayarak yatay olarak hizalar hizalar*/
+    //justify-content:flex-end;    /*elemanları sağa yaslayarak yatay olarak hizalar*/
+    //justify-content:space-between; /*elemaları baştakini sola sondakini sağa ve diğerlerini eşit aralıklar ile yatay olarak hizalar*/
+    //justify-content:space-around;  /*elemanları baştan ve sondan ve aralarında eşit aralıklar olacak şekilde yatay olarak hizalar elemanlar arasında 2x boşluk var ise sağdan ve soldan x kadar boşluk bırakır*/
+    justify-content:space-evenly; /*elemanlar arasında ve sağdan soldan olmak üzere eşit aralıklı boşluklar bırakır*/
+    background-color: red;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.item2{
+    background-color: green;
+    padding: 40px;
+    margin: 30px;
+    color: #fff;
+    font-size: 35px;
+}
+
+.container3{
+    display: flex;
+    background-color: red;
+    padding: 15px;
+    margin-top: 10px;
+
+
+    /* align-items elemanları dikey olarak hizalamaya yarar*/
+   // align-items: stretch;  
+   // align-items: center;
+    //align-items: flex-start;
+    //align-items:flex-end;
+    align-items:baseline;
+}
+
+.item3{
+    background-color: green;
+    padding: 40px;
+    margin: 30px;
+    font-size: 35px;
+}
+
+.i3{
+    height: 200px;
+}
+
+.container4{
+    /*flex-direction:row iken justify-content yatay align-items dikey işlem yapar , flex-direciton:column iken justify-cntent dikey align-items yatay olarak işlem yapar*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*flex-direction:column olduğu için dikey olarak kutuları ortada hizalar*/
+    background-color: red;
+    padding: 15px;
+    margin-top: 10px;
+    // align-items: stretch;  
+   // align-items: center;
+    align-items: flex-start;
+    //align-items:flex-end;
+   //align-items:baseline;
+}
+
+.item4{
+    background-color: green;
+    padding: 40px;
+    margin: 30px;
+    font-size: 35px;
+}
+
+/*item bazlı hizalama yapma*/
+
+.container5{
+    background-color: red;
+    padding: 15px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.item5{
+    background-color: green;
+    padding: 40px;
+    margin: 30px;
+    font-size: 35px;
+    flex-grow: 1;  /*Bütün elemanlara 1  büyüttük içinde bulunduğu containeri eşit büyüklükte kaplar*/
+}
+
+.i51{
+    align-self: stretch; /*strecth dediğimiz için sayfanın yüksekliğine göre kendini ayarladı*/
+    order: 6;
+    flex-grow: 2;
+}
+
+.i52{
+    
+    height: 200px;
+    order: 5;
+    flex-basis: 15%;
+}
+
+.i53{
+    align-self: flex-start;
+    order: -2;  /*order -2 sıralama için -2 dedim 2 adım sola gitti birinci elemanın yerine geçti*/
+    flex-basis: 200px;
+    flex-shrink: 0; /*flex-shrink:0 dediğimizde eleman 200px altına inmez sayfa küçülsede 200px altına inmez alt tarafta scroolbar çıkar eleman hiç bir zaman daralmaz*/
+    flex: 0 1 200px;  /*flex-basis ve flex-shrink flex-grow hepsini içerir   flex-grow:0 flex-shrink:1 flex-basis:200px anlamına gelir*/ 
+}
+
+.i54{
+    align-self: flex-end; /*son elemana align-self bağımsız davranmasını sağladık flex-end diyerek en altta konumlan dedik*/ 
+    flex-grow: 4;
+}
+
+.container6{
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap; /*elemanlar kapsayıcıdan taşarsa bir alt satırdan devam ettirir*/
+    //align-content: flex-start; /*birden fazla satır var ise hizalama yapmak için align-content özelliği kullanılır hizalama işlemini üstten yapar*/
+    //align-content: flex-end; /*hizalama işlemini alttan yapar*/
+    //align-content:strecth; /*yükseklik olarakt asatırı olduğu gibi kaplar*/
+    //align-content:center; /*elemanlar sayfanın ortasında hizalanır */
+    //align-content:space-between; /*yukarı ve alta hizalar ortada eşit boşluklar oluşur*/
+    //align-content:space-around;  /*yukarıdan alttan 1 birim  satırlar arasında 2 birim eşit boşluklar oluşacak şekilde hizalar*/
+    align-content:space-evenly; /*yukarıdan alttan ve satırlar arasında eşit boşluklar olacak şekilde hizalama yapar*/ 
+    height: 1000px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.item6{
+    background-color: green;
+    padding: 40px;
+    margin: 30px;
+    font-size: 35px;
+}
+
+.i72{
+    flex: 1; /*satırdaki son eleman olduğu için sağda geri kalan tüm alanı kaplar alt satırda eleman arttıkça kapladığı alan azalır*/ 
+}
+
+.container7{
+    display: flex;
+    //align-items: center;  /*align-item:center dediğim için strecth özelliği gitti*/
+    //justify-content: center;
+    height: 500px;
+    background-color: red;
+    margin-top: 10px;
+
+    /*align-items:center ve justify-content:center diyerek elemanı kapsayıcının tam ortasına alabiliyoruz margin:auto diyerekte aynı işlemi yapabiliyoruz*/ 
+}
+
+.item7{
+    //margin: auto; /*margin:auto diyerekte elemanı kapsayıcının tam ortasına alabiliyoruz*/
+    //margin-left: auto; /*elemanı kapsayıcının tam sağına konumlandırır*/
+    //margin-right: auto; /*elemanı kapsayıcının tam soluna konumlandırır*/
+   // margin-bottom: auto; /*elemanı kapsayıcının üstüne konumlandırır*/
+    //margin-top: auto;/*elemanı kapsayıcının altına konumlandırır*/
+    background-color: green;
+    padding: 30px;
+    font-size: 25px;
+    color:#fff;
+}
+
+.i73{
+  //margin: auto;
+  margin-right:auto;
+  //margin-bottom:auto;
+  margin-top:auto;
+}
+
+.i74{
+//margin: auto;
+margin-left:auto;
+//margin-bottom:auto;
+margin-top:auto;
+}

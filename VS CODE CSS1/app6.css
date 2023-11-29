@@ -1,0 +1,59 @@
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+.mbox{
+    width: 30px;
+    height:30px;
+    background: yellow;
+    position:absolute;
+    top: 50px;
+    left: 50px;
+}
+#first{
+    background: red;
+}
+
+#second{
+    background: green;
+}
+
+#third{
+    background: yellow;
+}
+
+#deneme4{
+    background-color: palegreen;
+}
+
+#deneme5{
+    background-color: teal;
+    position: relative;
+}
+/*absolute dediğim için deneme6 deneme5 konumuna geldi deneme4 olan box tarayıcının en üst köşesinden hizalanır bir üst element relative ise onu üst sınırını referans alarak
+konumlandırma yapar eğer üst elementlerin hepsi absolute ise tarayıcı üst sınırını referans alarak konumlandırma yapar içinde bulunduğu elementin position özelliği relative ise 
+içinde bulunduğu elementin üst sınırlarını referans olarak alır relative deneme4 te olsaydı deneme4 ün üst sınırını referans alacaktı konumlandırma için*/
+
+#deneme6{
+    background:yellowgreen;
+}
+
+.deneme7{
+    background: red;
+    top: 0px;
+    right: 0px;
+    position:fixed;
+    width: 100px;
+    height: 100px; /*position:fixed olduğu için sayfanın verilen konumunda kaydırma çubuğu ile hareket ettirsek bile sabit kalır*/
+}
+.stick{
+    width: 100px;
+    height: 100px;
+    background-color: navy;
+    position:sticky;
+    top: 100px;  /*position:sticky olduğu için kaydırma çubuğuyla hareket ettirince top 100 px e geldi anda sabit kalır yukarı doğru hareket etmez*/
+}
+
+
+

@@ -1,0 +1,40 @@
+
+
+.card{
+    width: 150px;
+    height: 150px;
+    background: blue;
+    transition: width 2s,height 4s,background 2s ;  /*Transition özelliği ile kutunun genişliğini 2sn içinde 150den 250px büyümesini sağlıyoruz efektli hareket sağlamış oluyoruz*/ 
+    margin-bottom: 10px;
+    transition-delay: 2s;  /*Geçişin başlamısını geciktirmek için verilen süre geçiş 2s sonra başlar*/
+}
+.card:hover{
+  width: 250px;
+  height: 250px;
+  background: yellow;
+}
+
+
+.card1{
+transition-timing-function: ease;
+}
+
+.card1:hover{
+    width: 250px;
+}
+
+.card2{
+transition-timing-function: linear;
+}
+
+.card3{
+transition-timing-function: ease-in;
+}
+
+.card4{
+transition-timing-function:ease-out ;
+}
+
+.card5{
+transition-timing-function: ease-in-out;
+}

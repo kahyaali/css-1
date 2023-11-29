@@ -1,0 +1,17 @@
+
+#section-one{
+    color:blue;  /* id ile stil verecek isek diez işareti koyarız*/ 
+    background-color: green;
+    padding: 0.5px;
+    width: 250px;  /* Div'e genişlil vererek istediğimiz genişlikte olmasını sağlıyoruz*/
+    height: 250px; /* Div içerisindeki elemanlar 250 px geçerse div dışında kalır yükseklik vermez isek div içerisindeki tanımlar çoğaldıkça div kendini ona göre günceller*/
+    overflow: scroll; /* Yüksekliğ sınırlayıp tanım dışında kalanları div dışına taşmasın scroll ile hareket ettirmek istersek overflow durumunda scroll diyerek taşmaları engelleriz*/
+}
+
+#section-two{
+    color:red;  /* id ile stil verecek isek diez işareti koyarız*/ 
+    background-color: yellow;
+    padding: 0.5px;
+    margin-top: 5px;
+    width: 50%;  /* Bu şekilde yüzde olarak oran verirsek otomatik kendini ayarlar sayfanın yüzde 50'si kadar kendini ayarlar sayfa küçültülüp büyüdükçe*/
+}
